@@ -191,7 +191,8 @@ video {
   font-weight: 900;
 }
 .contactus{
-  background-color: rgba(0, 0, 0, 0.9);
+  
+  background-color: rgba(0, 0, 0, 1);
   padding-bottom: 50px;
   padding-top: 30px;
 }
