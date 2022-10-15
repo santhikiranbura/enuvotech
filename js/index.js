@@ -26,12 +26,23 @@ $(document).on("scroll", function() {
   
       if ($(tag).position().top < pageBottom) {
         $(tag).addClass("visible");
-      } else {
-        $(tag).removeClass("visible");
       }
     }
   });
-  
+let k = 0;
+let txt = "...counting";
+function typeWriter() {
+    if (k < txt.length) {
+      document.getElementById("counting").innerHTML += txt.charAt(k);
+      k++;
+      setTimeout(typeWriter, 100);
+    }else{
+        k=0;
+        document.getElementById("counting").innerHTML = "";
+        setTimeout(typeWriter, 1000);
+    }
+  }
+  typeWriter();
 
 
 $("#teams-btn").click(function(){
