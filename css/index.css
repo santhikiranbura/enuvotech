@@ -71,7 +71,7 @@ video {
   padding: 0;
   line-height: 1;
   font-family: Futura, Helvetica, sans-serif;
-  font-size: 5vw;
+  font-size: 70px;
 }
 
 .aboutus{
@@ -240,7 +240,6 @@ video {
 }
 
 
-
 .fadeSection {
   opacity: 0;
   transform: translate(0, 10vh);
@@ -264,7 +263,10 @@ video {
     margin-top: 0px !important;
   }
   .video-container{
-    height: 100vh;
+    height: 90vh;
+  }
+  .callout h1{
+    font-size: 40px;
   }
 }
 
