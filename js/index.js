@@ -16,6 +16,19 @@ window.addEventListener('scroll', () => {
 
     }
 })
+const home  = document.querySelector('#home');
+const video = document.querySelector('#video');
+
+home.addEventListener('mouseover',function(){
+    video.play();
+})
+
+video.addEventListener('ended', (event) => {
+    video.muted = true;
+    video.autoplay = true;
+    video.play();
+});
+
 $(document).on("scroll", function() {
     var pageTop = $(document).scrollTop();
     var pageBottom = pageTop + $(window).height();
