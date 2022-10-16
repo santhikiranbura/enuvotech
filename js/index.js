@@ -16,12 +16,17 @@ window.addEventListener('scroll', () => {
 
     }
 })
-const home  = document.querySelector('#home');
+const playbtn  = document.querySelector('#playbtn');
 const video = document.querySelector('#video');
 
-home.addEventListener('mouseover',function(){
+playbtn.addEventListener('click',function(){
+   
+    $('#engine').addClass('animleft');
+    $('#ts').addClass('animright');
+
     video.play();
-})
+    playbtn.style.display = "none";
+});
 
 video.addEventListener('ended', (event) => {
     video.muted = true;
