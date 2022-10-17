@@ -192,9 +192,9 @@ to {
 .teams .card{
   border: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  height:350px;
+  height:315px;
   border-radius: 15px;
-
+  cursor: pointer;
   overflow: hidden;
 }
 .teams img{
@@ -230,6 +230,11 @@ to {
 }
 .teams-btn:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.close{
+  margin-top: -50px;
+  position: absolute;
+  margin-right: -200px;
 }
 
 .arrow {
@@ -271,6 +276,7 @@ to {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .icons{
   width: 50px;
   height: 50px;
